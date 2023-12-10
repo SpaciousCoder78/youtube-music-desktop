@@ -1,12 +1,12 @@
 {
   "name": "youtube-music-desktop",
-  "productName": "youtube-music-desktop",
+  "productName": "Youtube Music Desktop",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
+    "start": "electron main.js",
+    "package": "electron-builder build",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
@@ -28,6 +28,9 @@
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "electron": "28.0.0",
+    "electron-builder": "^24.9.1",
+    "electron-packager": "^17.1.2",
+    "electron-wix-msi": "^5.0.0",
     "eslint": "^8.55.0",
     "eslint-plugin-import": "^2.29.0",
     "ts-node": "^10.9.2",

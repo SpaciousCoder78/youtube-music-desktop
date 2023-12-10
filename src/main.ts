@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow ,nativeImage} from 'electron';
 import path from 'path';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -15,13 +15,12 @@ const createWindow = () => {
       preload: path.join(__dirname, 'preload.js'),
     },
   });
-  mainWindow.setMenuBarVisibility(false)
-  mainWindow.setIcon("src/icon.svg")
-  // and load the index.html of the app.
-  if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {
-    mainWindow.loadURL("https://music.youtube.com");
-  } else {
-    mainWindow.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
+  mainWindow.setMenuBarVisibility(false)  // and load the index.html of the app.
+  try{
+  mainWindow.loadURL("https://music.youtube.com")
+  }
+  catch(err){
+    mainWindow.loadFile("index.html")
   }
 
 };

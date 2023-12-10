@@ -75,6 +75,7 @@ typings/
 
 # Serverless directories
 .serverless/
+release-builds
 
 # FuseBox cache
 .fusebox/
