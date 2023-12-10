@@ -1,13 +1,18 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.tsc.autoDetect": "off",
-  "json.schemas": [
-    {
-      "fileMatch": [
-        "/*electron-builder.json5",
-        "/*electron-builder.json"
-      ],
-      "url": "https://json.schemastore.org/electron-builder"
+    "[rocket-mvbasic]": {
+        "editor.codeLens": false
+    },
+    "files.associations": {
+        "**/.rmv/config/*.json": "jsonc"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.rmv/catalog/**": true,
+        "*/_*": false
     }
-  ]
 }
