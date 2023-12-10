@@ -1,10 +1,10 @@
 {
-  "name": "electron-vite-boilerplate",
+  "name": "yt-music-desktop",
   "version": "2.0.0",
   "main": "dist-electron/main.js",
-  "description": "Really simple Electron + Vite boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
-  "license": "MIT",
+  "description": "YT music app for desktop",
+  "author": "SpaciousCoder78",
+  "license": "LGPL-3.0-or-later",
   "private": true,
   "keywords": [
     "electron",

@@ -21,13 +21,15 @@ const url = process.env['VITE_DEV_SERVER_URL']
 
 function createWindow() {
   win = new BrowserWindow({
-    icon: join(process.env.PUBLIC, 'logo.svg'),
+    icon: join(process.env.PUBLIC, 'ytm.svg'),
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,
       preload,
     },
   })
+  //disabling the ugly menu bar
+  win.setMenuBarVisibility(false)
 
   // Test active push message to Renderer-process.
   win.webContents.on('did-finish-load', () => {
@@ -35,7 +37,7 @@ function createWindow() {
   })
 
   if (url) {
-    win.loadURL(url)
+    win.loadURL("https://music.youtube.com")
   } else {
     // win.loadFile('dist/index.html')
     win.loadFile(join(process.env.DIST, 'index.html'))
