@@ -15,7 +15,26 @@ const createWindow = () => {
       preload: path.join(__dirname, 'preload.js'),
     },
   });
-  mainWindow.setMenuBarVisibility(false)  // and load the index.html of the app.
+  mainWindow.setMenuBarVisibility(false) 
+  mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+    if (url === 'about:blank') {
+      return {
+        action: 'allow',
+        overrideBrowserWindowOptions: {
+          frame: false,
+          fullscreenable: false,
+          backgroundColor: 'black',
+          webPreferences: {
+            preload: 'my-child-window-preload-script.js'
+          }
+        }
+      }
+    }
+    return { action: 'deny' }
+  })
+  
+ 
+   // and load the index.html of the app.
   try{
   mainWindow.loadURL("https://music.youtube.com")
   }

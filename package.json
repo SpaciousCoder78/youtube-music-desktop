@@ -1,12 +1,12 @@
 {
   "name": "youtube-music-desktop",
   "productName": "Youtube Music Desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
   "scripts": {
-    "start": "electron main.js",
-    "package": "electron-builder build",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
