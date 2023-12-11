@@ -18,3 +18,24 @@ Powered by ![Electron.js](https://img.shields.io/badge/Electron-191970?style=for
 Enjoy high quality audio and video playback right from your desktop instead of opening a browser everytime you want to listen to music on Youtube Music.
 
 ![image](https://github.com/SpaciousCoder78/youtube-music-desktop/assets/88923986/bf7dd49e-3ba1-484f-b5bd-d55947420c95)
+
+## Supported Operating Systems
+- Windows 10 or above (x64)
+
+## How to Install
+
+- Go to the releases section of this repository and download the latest release
+
+![image](https://github.com/SpaciousCoder78/youtube-music-desktop/assets/88923986/23bddfcd-caf2-4928-86ff-d774358e5423)
+
+- Download the zip file and extract its contents
+
+![image](https://github.com/SpaciousCoder78/youtube-music-desktop/assets/88923986/f7a3c63a-c232-44eb-86d9-3096d02fcd84)
+
+- Click on the YoutubeMusicDesktop.exe file
+
+![image](https://github.com/SpaciousCoder78/youtube-music-desktop/assets/88923986/9ccfaee6-66a8-4ed4-a922-768a1e729ccc)
+
+- Enjoy Youtube Music on your desktop
+
+![image](https://github.com/SpaciousCoder78/youtube-music-desktop/assets/88923986/6466c79c-2be5-4963-9b57-a76b864dfa40)
